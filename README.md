@@ -14,10 +14,10 @@ The following modifications were performed to the dataset:
 -	All data was resized to 256x256.
 -	All data was cropped down to the car only.
 
-**Known Car**
+**Known Car**  
 ![](data/test/camry/camry1.jpg)
 
-**Unknown Car**
+**Unknown Car**  
 ![](data/test/not_camry/2520.jpg)
 
 ## Approach
