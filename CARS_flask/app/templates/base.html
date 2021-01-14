@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>CARS</title>
+  <link rel="stylesheet" href="static/styles.css">
+</head>
+
+<nav>
+  <div>
+    <a id="top-left" href="{{ url_for('main.welcome') }}">CARS</a>
+  </div>
+</nav>
+
+<body>
+{% block content %}
+{% endblock %}
+</body>
+<footer>
+  <div id="links">
+    <a href="https://github.com/AColocho/car_recognition_system">Github</a>
+  </div>
+</footer>
+</html>

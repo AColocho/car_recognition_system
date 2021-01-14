@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block body %}
+
+<div class='how-to-container' style='margin-top: 5%;'>
+    <h1>Error {{ error }}</h1>
+    <h2>We ran into a problem :-/</h2>
+    <h4>We'll send you back to the homepage.</h4>
+    <a href="{{ url_for('main.welcome') }}">Click Here, if you havent been redirected after 5 seconds...</a>
+</div>
+
+<script>
+    setTimeout(function(){
+        window.location.href ="{{ url_for('main.welcome') }}";
+    }, 7000);
+</script>
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="main-intro">
+    <img src="{{ img }}" width="500" height="500">
+    <p>{{ preds }}</p>
+    <a id='button' href="{{ url_for('main.welcome') }}">Try Another Image</a>
+</div>
+{% endblock %}

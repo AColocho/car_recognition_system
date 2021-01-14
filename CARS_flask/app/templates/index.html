@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class='main-intro'>
+    <h1>CARS (Car Recognition System)</h1>
+    <p>
+       I am an AI trying to help with home security by learning the car that you drive and notifying you when an unknown car
+        shows up to your driveway.  
+    </p>
+    
+    <p>
+        I do this by using the power of machine learning!
+    </p>
+
+    <p>
+        So far, I was taught to recognize the Toyota Camry below.
+    </p>
+
+    <img src= "{{ url_for('static',filename='static_images/camry1.jpg' ) }}"/>
+    <img src="{{ url_for('static',filename='static_images/camry6.jpg' ) }}"/>
+    
+
+    <h3>Upload a picture to test me!</h3>
+    <p>Don't worry, the picture you upload will be used just for this session. The picture will be deleted at the end of the test.</p>
+    <form method="POST" enctype=multipart/form-data>
+        <input type="file" name="img" accept="image/*">
+        <button>Submit</button>
+    </form>
+</div>
+{% endblock %}
