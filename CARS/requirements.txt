@@ -1,6 +1,6 @@
 numpy == 1.22.0
 Flask == 2.3.2
-gunicorn == 20.0.4
+gunicorn == 22.0.0
 tensorflow-cpu == 2.11.1
 Pillow == 10.0.1
 streamlit == 1.37.0
